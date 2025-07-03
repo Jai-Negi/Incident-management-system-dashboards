@@ -1,3 +1,4 @@
+import React from 'react';
 import { makeStyles } from '@mui/styles';
 import DataLink from './DataLink';
 import { Container, Typography } from '@mui/material';
@@ -7,6 +8,7 @@ import overview from './Assets/overview.png';
 import Trend from './Assets/Trend.png';
 import Performance from './Assets/Performance.png';
 import comparative from './Assets/comparative.png';
+import ReviewForm from './ReviewForm';
 const TableauLinks = [
   {
     name: 'Overview Dashboard',
@@ -64,6 +66,8 @@ const Dashboard = () => {
           <DataLink key={link.name} name={link.name} url={link.url} image={link.image} />
         ))}
       </div>
+
+      <ReviewForm/>
     </Container>
   );
 };
